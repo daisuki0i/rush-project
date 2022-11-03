@@ -1,0 +1,25 @@
+#cursor {
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: white; 
+	}
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+} 
+ 
+/* .scroll-container > div {
+  scroll-snap-align: start;
+  display: flex;
+  height: 100vh;
+}  */
