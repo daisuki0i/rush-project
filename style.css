@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kanit",sans-serif;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://signin.intra.42.fr/assets/background_login-a4e0666f73c02f025f590b474b394fd86e1cae20e95261a6e4862c2d0faa1b04.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box{
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px #00babc;
+    display: flex;
+    flex-direction: column;
+}
+
+.box h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
+.username,
+.password{
+    position: relative;
+}
+
+.fa-envelope,
+.fa-lock-open{
+    position: absolute;
+    left: 45px;
+    top: 40pt;
+    color: rgb(255, 255, 255);
+}
+.box input[type="text"],
+.box input[type="password"]{
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #00babc;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: all .2s ease-in;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus{
+    width: 250px;
+    border-color: #00babc;
+
+}
+
+.wrapper{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #00babc;
+    padding: 14px 35px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}

@@ -1,53 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="style.css" rel="stylesheet"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="flex relative overflow-hidden bg-black">
-    <div
-      id="img1"
-      class="ease-out duration-300 h-screen w-2/4 opacity-50 bg-[url('https://placekitten.com/1280/720')] bg-center bg-no-repeat bg-cover"
-      alt="img1"
-    ></div>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+    <div class="wrapper">
+        <form action="" class="box">
+            <h1>moodhub</h1>
+            
+            <!--User Input-->
+            <div class="username">
+                <input type="text" placeholder="Enter Username" id="username">
+            </div>
 
-    <div
-      id="img2"
-      class="ease-out duration-300 h-screen w-2/4 opacity-50 bg-[url('src/wboonler/img/pro3.jpg')] bg-center bg-no-repeat bg-cover"
-      alt="img2"
-    ></div>
-    <a
-      class="absolute px-8 py-2 w-2/4 h-24 bg-white bottom-20 transition hover:z-10 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
-      href="/src/auardrit/"
-      onmouseover="fadeIn(document.getElementById('img1'))"
-      onmouseout="fadeOut(document.getElementById('img1'))"
-    >
-      <p class="text-5xl font-extrabold text-right">AUARDRIT</p>
-      <p class="text-xl font-bold text-right">TEST2</p>
-    </a>
-    <a
-      class="absolute px-8 py-2 w-2/4 h-24 bg-black bottom-20 right-0 transition hover:scale-105 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
-      href="/src/wboonler/"
-      onmouseover="fadeIn(document.getElementById('img2'))"
-      onmouseout="fadeOut(document.getElementById('img2'))"
-    >
-      <p class="text-5xl font-extrabold text-white">WBOONLER</p>
-      <p class="text-xl font-bold text-white">worachisa</p>
-    </a>
+            <!--Password Input-->
+            <div class="password">
+                <input type="password" placeholder="Enter Password" id="password">
+            </div>
 
-    <script>
-      const fadeIn = (id) => {
-        id.style.opacity = "1";
-        id.style.transform = "scale(1.05)";
-        if (id === "img1") id.style.zIndex = "100";
-      };
-      const fadeOut = (id) => {
-        id.style.opacity = "0.5";
-        id.style.transform = "scale(1)";
-        id.style.zIndex = "0";
-      };
-    </script>
-  </body>
+            <!--Button-->
+            <a href="home.html" id="btn">Login</a>
+        </form>
+    </div>
+   </body>
 </html>
