@@ -1,174 +1,339 @@
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d4028a988d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Worachisa</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="styles.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/d4028a988d.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-  <title>Worachisa</title>
-</head>
+  <body>
+    <header
+      class="fixed flex items-center justify-between px-8 sm:px-24 py-8 text-white w-screen z-10 name1"
+    >
+      <nav class="flex gap-8 items-center">
+        <a href="/">
+          <h1 class="text-2xl font-bold hidden md:block">RUSH PROJECT</h1>
+          <i class="fa-solid fa-house fa-fw fa-2x block md:hidden"> </i>
+        </a>
+        <a href="/src/auardrit/">auardrit</a>
+      </nav>
+      <nav class="flex gap-8 items-center">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<body>
-  <header class="fixed flex items-center justify-between px-8 sm:px-24 py-8 text-white w-screen z-10">
-    <a href="/">
-      <h1 class="text-2xl font-bold hidden sm:block">RUSH PROJECT</h1>
-      <i class="fa-solid fa-house fa-fw fa-2x block sm:hidden"> </i>
-    </a>
-    <nav class="flex gap-8">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <div class="scroll-container">
-    <section
-      class="flex flex-col gap-4 h-screen items-center justify-center snap-start bg-[url('img/pro2.jpg')] bg-center bg-no-repeat bg-cover bg-fixed"
-      id="about">
-      <p class="font-extrabold text-center text-white text-5xl sm:text-6xl md:text-7xl name">
-        I am Worachisa Boonlert
-      </p>
-      <div class="flex gap-0.5 h-8 items-center">
-        <p class="font-extrabold inline-block text-center text-white text-2xl name1" id="text"></p>
-        <div id="cursor" class="bg-white h-8 w-1"></div>
-      </div>
-    </section>
-    <section class="bg-[url('img/bg3.jpg')] flex justify-center items-center h-screen snap-start" id="skills">
-      <article class="overflow-hidden rounded-lg p-24 grid grid-cols-3">
-        <div class="pr-2 drop-shadow transition hover:drop-shadow-lg">
-          <img alt="Office"
-            src="https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg"
-            class="h-56 w-full object-cover" />
+    <div class="scroll-container">
+      <section
+        class="flex flex-col gap-4 h-screen items-center justify-center snap-start bg-[url('img/pro2.jpg')] bg-center bg-no-repeat bg-cover bg-fixed"
+        id="about"
+      >
+        <p
+          class="font-extrabold text-center text-white text-5xl sm:text-6xl md:text-7xl name"
+        >
+          I am Worachisa Boonlert
+        </p>
+        <div class="flex gap-0.5 h-8 items-center">
+          <p
+            class="font-extrabold inline-block text-center text-white text-2xl name1"
+            id="text"
+          ></p>
+          <div id="cursor" class="bg-white h-8 w-1"></div>
+        </div>
+      </section>
 
-          <div class="bg-white p-4 sm:p-6 h-18">
-            <time datetime="2022-10-10" class="block text-xs text-gray-500">
-             
-            </time>
-
-            <a href="#">
-              <h3 class="mt-0.5 text-lg text-gray-900">
-                Developing
-              </h3>
-            </a>
-
-            <p class="mt-2 text-sm leading-relaxed text-gray-500">
-              Now I'm working hard on programming<br>
-              Languages I speak:<br>
+      <section
+        class="relative flex gap-16 py-8 justify-center snap-start bg-zinc-900"
+        id="skills"
+        style="height: 3200px"
+      >
+        <div class="flex flex-col ml-8" style="margin-top: 800px">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            style="margin-bottom: 560px"
+          >
+            <img
+              alt="office"
+              src="https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg"
+              class="h-64 sm:h-96 w-96 object-cover"
+            />
+            <h3 class="mt-4 text-xl font-bold text-white">Developing</h3>
+            <p class="mt-2 max-w-sm text-white">
+              Now I'm working hard on programming.<br />
+              Languages I speak:<br />
               JAVA HTML CSS
             </p>
           </div>
-        </div>
-        <div class="px-2 drop-shadow transition hover:drop-shadow-lg">
-          <img alt="Office"
-            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&w=1000&q=80"
-            class="h-56 w-full object-cover" />
-
-          <div class="bg-white p-4 sm:p-6 h-18">
-            <time datetime="2022-10-10" class="block text-xs text-gray-500">
-              
-            </time>
-
-            <a href="#">
-              <h3 class="mt-0.5 text-lg text-gray-900">
-                Hobbies
-              </h3>
-            </a>
-
-            <p class="mt-2 text-sm leading-relaxed text-gray-500">
-              I always spend my free time editing videos and photos, I like to learn withered with image colour schemes.
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <img
+              class="h-64 sm:h-96 w-96 object-cover"
+              alt="office2"
+              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&w=1000&q=80"
+            />
+            <h3 class="mt-4 text-xl font-bold text-white">Hobbies</h3>
+            <p class="mt-2 max-w-sm text-white">
+              I always spend my free time editing videos and photos, I like to
+              learn withered with image colour schemes.
             </p>
           </div>
         </div>
-        <div class="pl-2 drop-shadow transition hover:drop-shadow-lg">
-          <img alt="Office"
-            src="https://cdn.shopify.com/s/files/1/0566/6586/6400/files/playlist.jpg?v=1626009406"
-            class="h-56 w-full object-cover" />
-
-          <div class="bg-white p-4 sm:p-6 h-18">
-            <time datetime="2022-10-10" class="block text-xs text-gray-500">
-              
-            </time>
-
-            <a href="#">
-              <h3 class="mt-0.5 text-lg text-gray-900">
-                Passion
-              </h3>
-            </a>
-
-            <p class="mt-2 text-sm leading-relaxed text-gray-500">
-              I love listening to music, reading foreign literature books,<br>
-              film tones and socialising, chatting with friends.
+        <div
+          class="relative flex flex-col w-2 bg-white items-center mt-52 text-white"
+          style="height: 2600px; gap: 500px"
+        >
+          <i
+            class="absolute fa-solid fa-jet-fighter fa-rotate-90 fa-5x text-yellow-300 progress z-10"
+          ></i>
+          <i class="fa-solid fa-circle fa-2x"></i>
+          <p
+            class="absolute top-80 text-black text-6xl font-bold bg-white p-4 rounded-full"
+            data-aos="fade-up"
+          >
+            EXPERIENCE
+          </p>
+          <i class="fa-solid fa-circle fa-2x mt-64"></i>
+          <i class="fa-solid fa-circle fa-2x"></i>
+          <i class="fa-solid fa-circle fa-2x"></i>
+          <p
+            class="absolute bottom-40 sm:bottom-80 text-black text-6xl font-bold bg-white p-4 rounded-full"
+            data-aos="fade-up"
+          >
+            SKILLS
+          </p>
+          <i class="absolute top-full fa-solid fa-circle fa-2x"></i>
+        </div>
+        <div class="flex flex-col gap-96 mr-8" style="margin-top: 840px">
+          <div class="h-24"></div>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <img
+              alt="office3"
+              src="https://cdn.shopify.com/s/files/1/0566/6586/6400/files/playlist.jpg?v=1626009406"
+              class="h-64 sm:h-96 w-96 object-cover"
+            />
+            <h3 class="mt-4 text-xl font-bold text-white">Passion</h3>
+            <p class="mt-2 max-w-sm text-white">
+              I love listening to music, reading foreign literature books, film
+              tones and socialising, chatting with friends.
             </p>
           </div>
         </div>
-      </article>
-
-    </section>
-    <section class="relative bg-[url('img/bg1.jpg')] flex flex-col gap-12 h-screen items-center justify-center snap-start"
-      id="contact">
-      <p class="text-6xl text-black font-bold layer" data-speed="5" >
-        CONTACT
-      </p>
-      <div class="flex text-7xl gap-12 layer text-white" data-speed="10">
-        <a href="https://www.instagram.com/tsuki0i/" target="_blank">
-        <div class="flex justify-center items-center bg-black rounded-full h-28 w-28">
-          <i class="fa-brands fa-instagram fa-fw" data-speed="5"> </i>
-        </div>
-      </a>
-      <a href="https://www.facebook.com/worachisa.boonlert.9" target="_blank">
-        <div class="flex justify-center items-center bg-black rounded-full h-28 w-28">
-          <i class="fa-brands fa-facebook fa-fw" data-speed="5"> </i>
-        </div>
-      </a>
-      <a href="https://github.com/daisuki0i" target="_blank">
-        <div class="flex justify-center items-center bg-black rounded-full h-28 w-28">
-          <i class="fa-brands fa-github fa-fw" data-speed="5"> </i>
-        </div>
-      </a>
-      </div>
-      <div class="flex gap-32 layer" data-speed="5">
-        <div class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-96 rounded-md">
-          <i class="fa-solid fa-envelope fa-fw fa-3x"> </i>
-          <p class="text-black text-3xl font-bold">Email Me</p>
-          <p class="text-black text-lg">worachisab@gmail.com</p>
-        </div>
-        <div class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-96 rounded-md">
-          <i class="fa-solid fa-phone fa-3x"> </i>
-          <p class="text-black text-3xl font-bold">Call Me</p>
-          <p class="text-black text-lg">08477521xx</p>
-        </div>
-      </div>
-      <!-- <div
-          class="absolute flex top-32 left-3/4 text-white layer"
-          data-speed="5"
+        <div
+          class="absolute bottom-48 sm:bottom-96 gap-8 flex w-screen justify-center"
         >
-          <i class="fa-solid fa-cloud fa-fw fa-10x"> </i>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="flex flex-col gap-4 justify-center items-center text-white w-1/2"
+          >
+            <i class="fa-solid fa-computer fa-fw text-6xl sm:text-7xl"></i>
+            <p class="text-2xl text-center">Web developer</p>
+            <p class="text-xl text-center">HTML | CSS | JAVASCRIPT</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="flex flex-col gap-4 justify-center items-center text-white w-1/2"
+          >
+            <i class="fa-solid fa-code fa-fw text-6xl sm:text-7xl"></i>
+            <p class="text-2xl text-center">Programming Languages</p>
+            <p class="text-xl text-center">JAVA | PYTHON</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-[url('img/bg3.jpg')] flex justify-center items-center h-screen snap-start"
+        id="skills"
+      >
+        <article class="overflow-hidden rounded-lg p-24 grid grid-cols-3">
+          <div class="pr-2 drop-shadow transition hover:drop-shadow-lg">
+            <img
+              alt="Office"
+              src="https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg"
+              class="h-56 w-full object-cover"
+            />
+
+            <div class="bg-white p-4 sm:p-6 h-18">
+              <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              </time>
+
+              <a href="#">
+                <h3 class="mt-0.5 text-lg text-gray-900">Developing</h3>
+              </a>
+
+              <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                Now I'm working hard on programming<br />
+                Languages I speak:<br />
+                JAVA HTML CSS
+              </p>
+            </div>
+          </div>
+          <div class="px-2 drop-shadow transition hover:drop-shadow-lg">
+            <img
+              alt="Office"
+              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&w=1000&q=80"
+              class="h-56 w-full object-cover"
+            />
+
+            <div class="bg-white p-4 sm:p-6 h-18">
+              <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              </time>
+
+              <a href="#">
+                <h3 class="mt-0.5 text-lg text-gray-900">Hobbies</h3>
+              </a>
+
+              <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                I always spend my free time editing videos and photos, I like to
+                learn withered with image colour schemes.
+              </p>
+            </div>
+          </div>
+          <div class="pl-2 drop-shadow transition hover:drop-shadow-lg">
+            <img
+              alt="Office"
+              src="https://cdn.shopify.com/s/files/1/0566/6586/6400/files/playlist.jpg?v=1626009406"
+              class="h-56 w-full object-cover"
+            />
+
+            <div class="bg-white p-4 sm:p-6 h-18">
+              <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              </time>
+
+              <a href="#">
+                <h3 class="mt-0.5 text-lg text-gray-900">Passion</h3>
+              </a>
+
+              <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                I love listening to music, reading foreign literature books,<br />
+                film tones and socialising, chatting with friends.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="relative flex flex-col gap-4 md:gap-12 items-center h-screen justify-center snap-start contact-bg bg-center bg-no-repeat bg-cover"
+        id="contact"
+      >
+        <p
+          class="text-5xl md:text-6xl text-white font-bold layer name"
+          data-speed="2"
+        >
+          CONTACT
+        </p>
+        <div
+          class="flex text-4xl md:text-7xl gap-12 layer text-white"
+          data-speed="2"
+        >
+          <a
+            class="flex justify-center items-center bg-gradient-to-b from-rose-700 to-yellow-500 rounded-full h-20 w-20 md:h-28 md:w-28"
+            href="https://www.instagram.com/tsuki0i/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram fa-fw" data-speed="2"> </i>
+          </a>
+          <a
+            class="flex justify-center items-center bg-blue-800 rounded-full h-20 w-20 md:h-28 md:w-28"
+            href="https://www.facebook.com/worachisa.boonlert.9"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook fa-fw" data-speed="2"> </i>
+          </a>
+          <a
+            class="flex justify-center items-center bg-black rounded-full h-20 w-20 md:h-28 md:w-28"
+            href="https://github.com/daisuki0i"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github fa-fw" data-speed="2"> </i>
+          </a>
         </div>
         <div
-          class="absolute flex top-12 left-8 text-white layer"
-          data-speed="5"
+          class="flex flex-col md:flex-row px-4 mx-4 gap-4 md:gap-16 justify-center layer"
+          data-speed="4"
         >
-          <i class="fa-solid fa-cloud fa-fw fa-10x"> </i>
+          <a
+            class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-80 rounded-md"
+            href="mailto:worachisab@gmail.com"
+            target="_blank"
+          >
+            <i class="fa-solid fa-envelope fa-fw fa-3x"> </i>
+            <p class="text-black text-3xl font-bold">Email Me</p>
+            <p class="text-black text-lg">worachisab@gmail.com</p>
+          </a>
+          <div
+            class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-80 rounded-md"
+          >
+            <i class="fa-solid fa-phone fa-3x"> </i>
+            <p class="text-black text-3xl font-bold">Call Me</p>
+            <p class="text-black text-lg">084-77521XX</p>
+          </div>
         </div>
-        <div
-          class="absolute flex bottom-12 left-1/2 text-white layer"
-          data-speed="35"
-        >
-          <i class="fa-solid fa-shuttle-space fa-fw fa-6x"> </i>
+      </section>
+      <!-- <section
+        class="relative bg-[url('img/bg1.jpg')] flex flex-col gap-12 h-screen items-center justify-center snap-start"
+        id="contact"
+      >
+        <p class="text-6xl text-black font-bold layer" data-speed="5">
+          CONTACT
+        </p>
+        <div class="flex text-7xl gap-12 layer text-white" data-speed="10">
+          <a href="https://www.instagram.com/tsuki0i/" target="_blank">
+            <div
+              class="flex justify-center items-center bg-black rounded-full h-28 w-28"
+            >
+              <i class="fa-brands fa-instagram fa-fw" data-speed="5"> </i>
+            </div>
+          </a>
+          <a
+            href="https://www.facebook.com/worachisa.boonlert.9"
+            target="_blank"
+          >
+            <div
+              class="flex justify-center items-center bg-black rounded-full h-28 w-28"
+            >
+              <i class="fa-brands fa-facebook fa-fw" data-speed="5"> </i>
+            </div>
+          </a>
+          <a href="https://github.com/daisuki0i" target="_blank">
+            <div
+              class="flex justify-center items-center bg-black rounded-full h-28 w-28"
+            >
+              <i class="fa-brands fa-github fa-fw" data-speed="5"> </i>
+            </div>
+          </a>
         </div>
-        <div
-          class="absolute flex top-12 left-1/2 text-white layer"
-          data-speed="20"
-        >
-          <i class="fa-solid fa-meteor fa-fw fa-6x"> </i>
-        </div> -->
-    </section>
-  </div>
+        <div class="flex gap-32 layer" data-speed="5">
+          <div
+            class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-96 rounded-md"
+          >
+            <i class="fa-solid fa-envelope fa-fw fa-3x"> </i>
+            <p class="text-black text-3xl font-bold">Email Me</p>
+            <p class="text-black text-lg">worachisab@gmail.com</p>
+          </div>
+          <div
+            class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-96 rounded-md"
+          >
+            <i class="fa-solid fa-phone fa-3x"> </i>
+            <p class="text-black text-3xl font-bold">Call Me</p>
+            <p class="text-black text-lg">08477521xx</p>
+          </div>
+        </div>
+      </section> -->
+    </div>
 
-  <script src="_ContactParallax.js"></script>
-  <script src="_TextTyping.js"></script>
-</body>
-
+    <script src="_SkillAnimate.js"></script>
+    <script src="_ContactParallax.js"></script>
+    <script src="_TextTyping.js"></script>
+  </body>
 </html>

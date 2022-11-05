@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex overflow-hidden bg-black">
+    <a
+      id="img1"
+      href="/src/auardrit/"
+      class="relative ease-out duration-300 h-screen w-2/4 opacity-50 bg-[url('/src/auardrit/img/me_3.jpg')] bg-center bg-no-repeat bg-cover"
+      alt="img1"
+      onmouseover="fadeIn('img1')"
+      onmouseout="fadeOut('img1')"
+    >
+      <div class="absolute px-8 py-2 w-full h-24 bg-white bottom-20">
+        <p class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-right">
+          AUARDRIT
+        </p>
+        <p class="text-md sm:text-xl font-bold text-right">Aussadawut A.</p>
+      </div>
+    </a>
+    <div class="w-6 h-screen bg-black"></div>
+    <a
+      id="img2"
+      href="/src/wboonler/"
+      class="relative ease-out duration-300 h-screen w-2/4 opacity-50 bg-[url('/src/wboonler/img/pro3.jpg')] bg-center bg-no-repeat bg-cover"
+      alt="img1"
+      onmouseover="fadeIn('img2')"
+      onmouseout="fadeOut('img2')"
+    >
+      <div class="absolute px-8 py-2 w-full h-24 bg-black bottom-20">
+        <p class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white">
+          WBOONLER
+        </p>
+        <p class="text-md sm:text-xl font-bold text-white">Worachisa B.</p>
+      </div>
+    </a>
+
+    <script>
+      const fadeIn = (_id) => {
+        id = document.getElementById(_id);
+        id.style.opacity = "1";
+        id.style.transform = "scale(1.05)";
+      };
+      const fadeOut = (_id) => {
+        id = document.getElementById(_id);
+        id.style.opacity = "0.5";
+        id.style.transform = "scale(1)";
+        id.style.zIndex = "0";
+      };
+    </script>
+  </body>
+</html>

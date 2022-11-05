@@ -11,12 +11,15 @@
 	}
 }
 
+.contact-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/src/wboonler/img/bg2.jpg');
+}
+
 .scroll-container {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100vh;
 } 
+
 
 .name  {
   text-shadow: 4px 4px 20px #000;
@@ -25,9 +28,3 @@
 .name1 {
   text-shadow: 4px 4px 10px #000;
 }
- 
-/* .scroll-container > div {
-  scroll-snap-align: start;
-  display: flex;
-  height: 100vh;
-}  */

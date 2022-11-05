@@ -15,7 +15,7 @@
 
   <body>
     <header
-      class="fixed flex items-center justify-between px-8 sm:px-24 py-8 text-white w-screen z-10"
+      class="fixed flex items-center justify-between px-8 sm:px-24 py-8 text-white w-screen z-10 name1"
     >
       <nav class="flex gap-8 items-center">
         <a href="/">
@@ -33,17 +33,17 @@
 
     <div class="scroll-container">
       <section
-        class="flex flex-col gap-4 h-screen items-center justify-center px-4 snap-start bg-[url('https://placekitten.com/1920/1080')] bg-center bg-no-repeat bg-cover bg-fixed"
+        class="flex flex-col gap-4 h-screen items-center justify-center px-4 snap-start bg-[url('/src/auardrit/img/me_2.jpg')] bg-center bg-no-repeat bg-cover bg-fixed"
         id="about"
       >
         <p
-          class="font-extrabold text-center text-white text-5xl sm:text-6xl md:text-7xl"
+          class="font-extrabold text-center text-white text-5xl sm:text-6xl md:text-7xl name"
         >
           I am Aussadawut Ardrit
         </p>
         <div class="flex gap-0.5 h-fit items-center">
           <p
-            class="font-extrabold inline-block text-center text-white text-2xl"
+            class="font-extrabold inline-block text-center text-white text-2xl name1"
             id="text"
           ></p>
           <div id="cursor" class="bg-white h-8 w-1"></div>
@@ -62,34 +62,30 @@
             style="margin-bottom: 560px"
           >
             <img
-              alt="Art"
-              src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="h-64 sm:h-96 w-full object-cover"
+              alt="me"
+              src="/src/auardrit/img/me_2.jpg"
+              class="h-64 sm:h-96 w-96 object-cover"
             />
 
-            <h3 class="mt-4 text-xl font-bold text-white">
-              Lorem, ipsum dolor.
-            </h3>
+            <h3 class="mt-4 text-xl font-bold text-white">About me</h3>
 
             <p class="mt-2 max-w-sm text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-              reiciendis sequi ipsam incidunt.
+              A 3rd year student in Computer Engineering from KMUTT, interested
+              in new technologies, web development, and cyber security.
             </p>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000">
             <img
-              alt="Art"
-              src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="h-64 sm:h-96 w-full object-cover"
+              alt="hino"
+              src="/src/auardrit/img/project_2.png"
+              class="h-64 sm:h-96 w-96 object-cover"
             />
 
-            <h3 class="mt-4 text-xl font-bold text-white">
-              Lorem, ipsum dolor.
-            </h3>
+            <h3 class="mt-4 text-xl font-bold text-white">HINO Project</h3>
 
             <p class="mt-2 max-w-sm text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-              reiciendis sequi ipsam incidunt.
+              Developed website using React and Redux. Worked as part of a big
+              team, and communicated in a professional and collegial way.
             </p>
           </div>
         </div>
@@ -122,18 +118,17 @@
           <div class="h-24"></div>
           <div data-aos="fade-up" data-aos-duration="1000">
             <img
-              alt="Art"
-              src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="h-64 sm:h-96 w-full object-cover"
+              alt="project_1"
+              src="/src/auardrit/img/project_1.jpg"
+              class="h-64 sm:h-96 w-96 object-cover"
             />
 
-            <h3 class="mt-4 text-xl font-bold text-white">
-              Lorem, ipsum dolor.
-            </h3>
+            <h3 class="mt-4 text-xl font-bold text-white">ReBRAIN Connect</h3>
 
             <p class="mt-2 max-w-sm text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-              reiciendis sequi ipsam incidunt.
+              Developed user interfaces with modern JavaScript frammeworks and
+              React.js. Created a Mobile Responsive User Experience to support
+              on any device with primary use on mobile.
             </p>
           </div>
         </div>
@@ -157,7 +152,7 @@
             class="flex flex-col gap-4 justify-center items-center text-white w-1/2"
           >
             <i class="fa-solid fa-code fa-fw text-6xl sm:text-7xl"></i>
-            <p class="text-2xl">Languages</p>
+            <p class="text-2xl text-center">Programming Languages</p>
             <p class="text-xl text-center">BASH | C | C++ | JAVA | PYTHON</p>
           </div>
         </div>
@@ -168,7 +163,7 @@
         id="contact"
       >
         <p
-          class="text-5xl md:text-6xl text-white font-bold layer"
+          class="text-5xl md:text-6xl text-white font-bold layer name"
           data-speed="2"
         >
           CONTACT
@@ -177,33 +172,40 @@
           class="flex text-4xl md:text-7xl gap-12 layer text-white"
           data-speed="2"
         >
-          <div
-            class="flex justify-center items-center bg-blue-900 rounded-full h-20 w-20 md:h-28 md:w-28"
+          <a
+            class="flex justify-center items-center bg-gradient-to-b from-rose-700 to-yellow-500 rounded-full h-20 w-20 md:h-28 md:w-28"
+            href="https://www.instagram.com/pack_hub/"
+            target="_blank"
           >
             <i class="fa-brands fa-instagram fa-fw" data-speed="2"> </i>
-          </div>
-          <div
-            class="flex justify-center items-center bg-blue-900 rounded-full h-20 w-20 md:h-28 md:w-28"
+          </a>
+          <a
+            class="flex justify-center items-center bg-blue-800 rounded-full h-20 w-20 md:h-28 md:w-28"
+            href="https://www.facebook.com/pack.packrock"
+            target="_blank"
           >
             <i class="fa-brands fa-facebook fa-fw" data-speed="2"> </i>
-          </div>
-          <div
-            class="flex justify-center items-center bg-blue-900 rounded-full h-20 w-20 md:h-28 md:w-28"
+          </a>
+          <a
+            class="flex justify-center items-center bg-black rounded-full h-20 w-20 md:h-28 md:w-28"
+            href="https://github.com/PackHubTH"
+            target="_blank"
           >
             <i class="fa-brands fa-github fa-fw" data-speed="2"> </i>
-          </div>
+          </a>
         </div>
         <div
           class="flex flex-col md:flex-row px-4 mx-4 gap-4 md:gap-16 justify-center layer"
           data-speed="4"
         >
-          <div
+          <a
             class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-80 rounded-md"
+            href="mailto:aussadawut2545@gmail.com"
           >
             <i class="fa-solid fa-envelope fa-fw fa-3x"> </i>
             <p class="text-black text-3xl font-bold">Email Me</p>
             <p class="text-black text-lg">aussadawut2545@gmail.com</p>
-          </div>
+          </a>
           <div
             class="bg-white flex flex-col gap-4 justify-center items-center h-52 w-80 rounded-md"
           >
