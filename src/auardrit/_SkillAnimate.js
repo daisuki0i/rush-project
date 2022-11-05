@@ -18,12 +18,6 @@ const progress = () => {
     }
     else
       progress.style.top = "100%"
-
-    // else if (window.scrollY >= min_y) {
-    //   x = (window.scrollY - min_y) * speed / (max_y - min_y) * 100
-    //   progress.style.top = `${x}%`
-    // }
-
   });
 }
 
