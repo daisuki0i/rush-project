@@ -13,11 +13,14 @@
 
 .scroll-container {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory; */
+  /* overflow-y: scroll; */
   height: 100vh;
 } 
- 
+
+.contact-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/src/auardrit/img/contactBg.jpg');
+}
 /* .scroll-container > div {
   scroll-snap-align: start;
   display: flex;
