@@ -1,7 +1,6 @@
 AOS.init();
 
 const progress = () => {
-  console.log(window.scrollY)
   document.querySelectorAll('.progress').forEach(progress => {
     let speed = 1
     let x = 0
