@@ -11,15 +11,14 @@
 	}
 }
 
-.contact-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/src/wboonler/img/bg2.jpg');
-}
-
 .scroll-container {
   scroll-behavior: smooth;
   height: 100vh;
 } 
 
+.contact-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./img/me_1.jpg');
+}
 
 .name  {
   text-shadow: 4px 4px 20px #000;
